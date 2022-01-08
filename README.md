@@ -2,9 +2,12 @@
 
 Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon Framework and Spring Cloud
 
+[FR] Français
+[EN] English
+
  [FR] ****************************************************************************************************
  
- Définition Pattern Event Sourcing
+ PATTERN EVENT SOURCING
 
 -> Capturer tous les changements de l'état de l'application comme séquences d'évènements.
 
@@ -16,7 +19,7 @@ Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon
 
 -> Exemple: opérations éffectuées sur un compte bancaire.
 
-Avantage Pattern Event Sourcing
+AVANTAGE EVENT SOURCING
 
 -> Base d'audit
 
@@ -28,7 +31,7 @@ Avantage Pattern Event Sourcing
 
 -> A partir des évènement on peut créer plusieurs projections avec des modèles de données differentes
 
-CQRS Command Query Responsability Segregation
+CQRS COMMAND QUERY RESPONSABILITY SEGREGATION
 
 C'est un pattern qui consiste à separer la partie lecture de la partie écriture d'une application.
 
@@ -42,12 +45,24 @@ C'est un pattern qui consiste à separer la partie lecture de la partie écritur
 
 -> Event Store: Base de persistance des évènements publiés dans l'application
 
+AVANTAGE CQRS
+
+-> On peut agreger facilement les données de plusieurs micro services
+
+-> Mise à l'échèlle séparement des deux parties Lecture (90%) écriture (10%)
+
+-> Liberter de choisir des SGBD différents pour la lecture et l'écriture
+
+-> Faciliter la séparation des aspect d'écriture et de lecture
+
+-> Faciliter la separation des deux modeles pour le lecture et l'écriture.
+
 
 
 
 [EN] ******************************************************************************************
 
-Definition Pattern Event Sourcing 
+PATTERN EVENT SOURCING
 
 -> Capture all changes in the state of the application as sequences of events.
 
@@ -59,7 +74,7 @@ Definition Pattern Event Sourcing
 
 -> Example: transactions carried out on a bank account.
 
-Advantage
+ADVANTAGE EVENT SOURCING
 
 -> Audit base
 
@@ -71,7 +86,7 @@ Advantage
 
 ->From the events we can create several projections with different data models
 
-CQRS Command Query Responsability Segregation
+CQRS COMMAND QUERY RESPONSABILITY SEGREGATION
 
 It is a pattern which consists in separating the reading part from the writing part of an application.
 
@@ -82,6 +97,20 @@ It is a pattern which consists in separating the reading part from the writing p
 -> Event: symbolizes an action that has occurred in the system.
 
 -> Event Bus: a mechanism that allows events to be dispatched to event listeners (Event Handler), for example KAFKA or RabbitMQ
+
+ADVANTAGE CQRS
+
+-> We can easily aggregate the data of several micro services
+
+-> Scaling the two parts separately Read (90%) Write (10%)
+
+-> Free to choose different DBMS for reading and writing
+
+-> Facilitate the separation of writing and reading aspects
+
+-> Facilitate the separation of the two models for reading and writing
+
+
 
 
 
