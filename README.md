@@ -2,7 +2,9 @@
 
 Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon Framework and Spring Cloud
 
-Définition Pattern Event Sourcing [FR] ****************************************************
+ [FR] ****************************************************************************************************
+ 
+ Définition Pattern Event Sourcing
 
 -> Capturer tous les changements de l'état de l'application comme séquences d'évènements.
 
@@ -14,7 +16,7 @@ Définition Pattern Event Sourcing [FR] ****************************************
 
 -> Exemple: opérations éffectuées sur un compte bancaire.
 
-Avantage 
+Avantage Pattern Event Sourcing
 
 -> Base d'audit
 
@@ -26,7 +28,26 @@ Avantage
 
 -> A partir des évènement on peut créer plusieurs projections avec des modèles de données differentes
 
-Definition Pattern Event Sourcing [EN] **************************************************
+CQRS Command Query Responsability Segregation
+
+C'est un pattern qui consiste à separer la partie lecture de la partie écriture d'une application.
+
+-> Command: une intention externe de modification de l'état d'un objet (insert, update, delete)
+
+-> Query: une intention de consultation d'une information ou de l'état d'un objet (select)
+
+-> Event: symbolise une action qui s'est produite dans le système.
+
+-> Event Bus: un mécanisme qui permet de dispatcher les évènements vers les écouteurs d'évènement(Event Handler) par exemple KAFKA ou RabbitMQ
+
+-> Event Store: Base de persistance des évènements publiés dans l'application
+
+
+
+
+[EN] ******************************************************************************************
+
+Definition Pattern Event Sourcing 
 
 -> Capture all changes in the state of the application as sequences of events.
 
@@ -49,6 +70,21 @@ Advantage
 -> Performance: Asynchronous with Message Buses that scale well (Scalability)
 
 ->From the events we can create several projections with different data models
+
+CQRS Command Query Responsability Segregation
+
+It is a pattern which consists in separating the reading part from the writing part of an application.
+
+-> Command: an external intention to modify the state of an object (insert, update, delete)
+
+-> Query: an intention to consult information or the state of an object (select)
+
+-> Event: symbolizes an action that has occurred in the system.
+
+-> Event Bus: a mechanism that allows events to be dispatched to event listeners (Event Handler), for example KAFKA or RabbitMQ
+
+
+
 
 
 
