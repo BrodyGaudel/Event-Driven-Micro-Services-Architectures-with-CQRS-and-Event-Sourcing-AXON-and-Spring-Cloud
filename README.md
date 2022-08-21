@@ -2,8 +2,7 @@
 
 Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon Framework and Spring Cloud
 
-[FR] Français
-[EN] English
+
 
  [FR] 
  *************************************************************************************************************************************************************************
