@@ -5,7 +5,7 @@
 
 "# Event-Driven-Micro-Services-Architectures-with-CQRS-and-Event-Sourcing-AXON-and-Spring-Cloud" 
 
-Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon Framework and Spring Cloud
+<b>Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon Framework and Spring Cloud</b>
 
 
 
@@ -14,7 +14,7 @@ Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">             
 <br>
  
- <b style="color:#FF0000";>PATTERN EVENT SOURCING</b>
+ <b>PATTERN EVENT SOURCING</b>
 
 -> Capturer tous les changements de l'état de l'application comme séquences d'évènements.
 
