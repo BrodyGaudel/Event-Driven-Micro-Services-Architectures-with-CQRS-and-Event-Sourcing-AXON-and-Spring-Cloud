@@ -10,9 +10,11 @@ Event Driven Micro Services Architecture, CQRS and Event Sourcing Patterns: Axon
 
 
  [FR] 
- *************************************************************************************************************************************************************************
+<p  align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">             
+<br>
  
- PATTERN EVENT SOURCING
+ <b>PATTERN EVENT SOURCING</b>
 
 -> Capturer tous les changements de l'état de l'application comme séquences d'évènements.
 
@@ -62,13 +64,11 @@ AVANTAGE CQRS
 
 -> Faciliter la separation des deux modeles pour le lecture et l'écriture.
 
+
+[EN] 
 <p  align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">             
 <br>
-
-
-[EN] 
-**********************************************************************************************************************************************************
 
 PATTERN EVENT SOURCING
 
